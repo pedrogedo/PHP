@@ -14,8 +14,8 @@
 	<body>
 		<div>
 			<?php 
-				$nota1 = $_GET["n1"];
-				$nota2 = $_GET["n2"];
+				$nota1 = isset($_GET["n1"])?$_GET["n1"]:0;
+				$nota2 = isset($_GET["n2"])?$_GET["n2"]:0;
 				$media = ($nota1+$nota2)/2;
 
 				echo "A média entre <span class='valor'>$nota1</span> e <span class='valor'>$nota2</span> é igual a <span class='valor'>$media</span><br>";
